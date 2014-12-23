@@ -57,7 +57,7 @@ prose:
       - name: "published"
          field:
            element: "hidden"
-           value: "true"
+           value: true
     pages:
       - name: "title"
         field:
@@ -74,5 +74,5 @@ prose:
       - name: "published"
         field:
           element: "hidden"
-          value: "true"
+          value: true
 
