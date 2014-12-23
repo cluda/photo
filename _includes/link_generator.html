@@ -3,8 +3,8 @@
 {% assign in_loop = false %}
 {% for page in sorted_pages %}
 
-  {% if page.url == "{{ site.baseurl }}/index.html" %}
-  {% elsif page.url == "{{ site.baseurl }}/pages/about.html" %}
+  {% if page.url == "/index.html" %}
+  {% elsif page.url == "/pages/about.html" %}
   {% elsif page.parent == "" %}
     <li>
       <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
