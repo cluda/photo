@@ -80,7 +80,7 @@ prose:
           value: "black_transparent/video"
       - name: "video-id"
         field:
-          element: "number"
+          element: "text"
           label: "Id of video at Vimeo. The last part of the video URL."
           help: "Example: 114487683."
       - name: "parent"
