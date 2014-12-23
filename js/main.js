@@ -1,4 +1,6 @@
-$.get("/background_pictures.csv", function (data) {
+---
+---
+$.get("{{ site.baseurl }}/background_pictures.csv", function (data) {
   var sliderImages = data.split(',');
   $('body').css('backgroundImage', 'url(' + sliderImages[0] + ')');
 
