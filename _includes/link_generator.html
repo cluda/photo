@@ -3,11 +3,11 @@
 {% assign in_loop = false %}
 {% for page in sorted_pages %}
 
-  {% if page.url == "/index.html" %}
-  {% elsif page.url == "/pages/about.html" %}
+  {% if page.url == "{{ site.baseurl }}/index.html" %}
+  {% elsif page.url == "{{ site.baseurl }}/pages/about.html" %}
   {% elsif page.parent == "" %}
     <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
+      <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
     </li>
   {% else %}
     {% if page.parent != last_parent %}
@@ -20,7 +20,7 @@
       <a href="#" class="js-accordion-trigger">{{ page.parent }}</a>
       <div class="submenu">
     {% endif %}
-    <a href="{{ page.url }}">{{ page.title }}</a><br/>
+    <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a><br/>
     {% assign in_loop = true %}
     {% assign last_parent = page.parent %}
   {% endif %}
