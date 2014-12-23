@@ -54,6 +54,10 @@ prose:
         field:
           element: "text"
           label: "Parent in Sidebar (optional)"
+      - name: "published"
+         field:
+           element: "hidden"
+           value: "true"
     pages:
       - name: "title"
         field:
@@ -67,3 +71,8 @@ prose:
         field:
           element: "text"
           label: "Parent in Sidebar (optional)"
+      - name: "published"
+        field:
+          element: "hidden"
+          value: "true"
+
