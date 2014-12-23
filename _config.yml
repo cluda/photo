@@ -37,6 +37,11 @@ prose:
     - README.md
   metadata:
     galleries:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
       - name: "title"
         field:
           element: "text"
@@ -56,6 +61,11 @@ prose:
           label: "Parent in Sidebar (should be 0 if no parent)"
           value: "0"
     pages:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
       - name: "title"
         field:
           element: "text"
@@ -70,6 +80,11 @@ prose:
           label: "Parent in Sidebar (should be 0 if no parent)"
           value: "0"
     videos:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
       - name: "title"
         field:
           element: "text"
