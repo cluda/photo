@@ -54,7 +54,7 @@ prose:
         field:
           element: "text"
           label: "Parent in Sidebar (optional)"
-          value: ""
+          value: " "
     pages:
       - name: "title"
         field:
@@ -68,4 +68,4 @@ prose:
         field:
           element: "text"
           label: "Parent in Sidebar (optional)"
-          value: ""
+          value: " "
