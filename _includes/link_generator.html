@@ -1,11 +1,11 @@
 {% assign sorted_pages = site.pages | sort: 'parent' %}
-{% assign last_parent = "" %}
+{% assign last_parent = "0" %}
 {% assign in_loop = false %}
 {% for page in sorted_pages %}
 
   {% if page.url == "/index.html" %}
   {% elsif page.url == "/pages/about.html" %}
-  {% elsif page.parent == "" %}
+  {% elsif page.parent == "0" %}
     <li>
       <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
     </li>
