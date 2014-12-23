@@ -1,9 +1,9 @@
 ---
 layout: black_transparent/video
 published: true
-title: bjørn
-parent: "0"
+title: Bear
+parent: "Videos"
 "video-id": "106209455"
 ---
 
-bjørn og ulv
+Bear and wolf.

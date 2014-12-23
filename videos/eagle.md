@@ -1,8 +1,8 @@
 ---
 layout: black_transparent/video
-title: Ørn
+title: Eagle
 video-id: 114487683
-parent: "0"
+parent: "Videos"
 published: true
 ---
 

@@ -38,3 +38,11 @@ parent: no-page
 .tag, .flickr_user {
   display: none;
 }
+
+.plus-sign:before {
+  content: "+ ";
+}
+
+.minus-sign:before {
+  content: "- ";
+}

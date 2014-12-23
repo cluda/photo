@@ -1,8 +1,8 @@
 ---
 layout: black_transparent/page
 published: true
-title: Ny Side
+title: This is a page
 parent: "0"
 ---
 
-Dette er en ny side
+This is a example page.

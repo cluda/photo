@@ -1,9 +1,7 @@
 ---
 layout: black_transparent/gallery
 published: true
-title: Ape
+title: Pictures
 parent: "0"
 flickr_tag: bilder
 ---
-
-Ligner på Vegard.

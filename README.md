@@ -49,6 +49,7 @@ parent: ""
 ---
 ```
 3. Write the page content in the content area (below the ending `---`).
+
 Technologies
 ---------------------
 *   jekyll
@@ -59,4 +60,5 @@ Technologies
 *   bourbon
 *   neat
 *   jquery
+*   javascript
 *   prose.io
