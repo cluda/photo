@@ -1,0 +1,105 @@
+.accordion {
+  $accordion-menu-border-color: $base-border-color;
+  $accordion-menu-color: $base-font-color;
+  $accordion-menu-border: 1px solid $accordion-menu-border-color;
+  $accordion-menu-background: lighten($accordion-menu-border-color, 10);
+  $accordion-menu-hover: lighten($accordion-menu-background, 2);
+  $accordion-menu-sub-background: darken($accordion-menu-background, 5);
+  $accordion-menu-sub-inset: darken($accordion-menu-sub-background, 6);
+  $accordion-menu-sub-hover: lighten($accordion-menu-sub-background, 2);
+  $accordion-menu-list-padding: $base-spacing/2 $gutter;
+
+  background-color: $accordion-menu-background;
+  border: $accordion-menu-border;
+  margin-bottom: $base-spacing;
+
+  list-style-type: none;
+  text-align: center;
+
+  li {
+    border-bottom: $accordion-menu-border;
+    text-align: center;
+
+    > a {
+      color: $accordion-menu-color;
+      padding: $accordion-menu-list-padding;
+      display: block;
+    }
+
+    &:last-child {
+      border: none;
+    }
+
+    &:hover {
+      background-color: $accordion-menu-hover;
+    }
+  }
+
+  .submenu {
+    display: none;
+    font-variant: initial;
+    font-size: 0.7em;
+    border-top:2px solid #707070;
+    border-bottom:2px solid #707070;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    li {
+      background-color: $accordion-menu-sub-background;
+
+      &:first-child {
+        border-top: $accordion-menu-border;
+        box-shadow: inset 0 1px 1px $accordion-menu-sub-inset;
+      }
+
+      &:hover {
+        background-color: $accordion-menu-sub-hover;
+      }
+    }
+  }
+
+  .is-expanded {
+    display: block;
+    padding-bottom: 0;
+  }
+}
+
+.sidebar-container {
+  @include span-columns(3);
+  min-height: 100%;
+  margin-left: 100px;
+  width: 260px;
+  position: relative;
+
+  @include media($tablet) {
+    margin-left: 0px;
+    width: 190px;
+  }
+  @include media($mobile) {
+    @include span-columns(12);
+    height: auto;
+    width: 100%;
+    min-height: initial;
+  }
+}
+
+.background-holder {
+  min-height: 100%;
+  width: 260px;
+  position: fixed;
+  background-color: $transparent-background-color;
+  z-index: -1;
+  -webkit-box-shadow: 0px 2px 2px 2px $transparent-background-color;
+  -moz-box-shadow: 0px 2px 2px 2px $transparent-background-color;
+  box-shadow: 0px 2px 2px 2px $transparent-background-color;
+
+  @include media($tablet) {
+    width: 190px;
+  }
+
+  @include media($mobile) {
+    @include span-columns(12);
+    width: 100%;
+  }
+}

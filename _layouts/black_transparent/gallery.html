@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include head_common.html %}
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href="/css/fotorama.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+<div class="tag">{{ page.flickr_tag }}</div>
+<div class="flickr_user">{{ site.flickr_user }}</div>
+<div class="outer-container">
+  {% include sidebar.html %}
+  <div class="content">
+    <h1>{{page.title}}</h1>
+    <p>
+      {{ content }}
+    </p>
+    <div id="my-fotorama" data-keyboard="true" data-auto="false" data-nav="thumbs" data-width="100%" data-maxheight="100%" data-minheight="350px"></div>
+  </div>
+</div>
+
+<script src="/js/lib/jquery-2.1.3.min.js"></script>
+<script src="/js/lib/fotorama.js"></script>
+<script src="/js/flickr.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+</html>

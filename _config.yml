@@ -1,0 +1,59 @@
+# Site settings
+title: Photo
+email: kontakt@cluda.no
+description: "Photo Site"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: CludaSoftware
+github_username:  cluda
+
+include: ['.htaccess']
+
+# Build settings
+markdown: kramdown
+safe: true
+
+flickr_user: 56654375@N07
+
+sass:
+    sass_dir: _sass/black_transparent/
+
+prose:
+  rooturl: ''
+  siteurl: 'http://cluda.github.io/photo/'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'images'
+  ignore:
+    - _includes
+    - _layouts
+    - _sass
+    - bourbon
+    - css
+    - neat
+    - js
+    - .gitignore
+    - index.html
+    - _config.yml
+  metadata:
+    app:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Gallery Title"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "black_transparent/gallery"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Gallery Title"
+      - name: "flickr_tag"
+        field:
+          element: "text"
+          label: "The tag used at Flickr on the images you want to be in the gallery."
+          help: "If you specify birds as the flickr_tag. This means that the 20 first pictures to be included in the gallery should have the tag birds1 on Flickr, and the next 20 pictures to be included should have the tag birds2 and so on."
+      - name: "parent"
+        field:
+          element: "text"
+          label: "Parent in Sidebar (optional)"

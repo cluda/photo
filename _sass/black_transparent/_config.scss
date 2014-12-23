@@ -1,0 +1,18 @@
+$max-width: em(2088) !default;
+
+@import '../../bourbon/bourbon';
+@import '../../neat/neat';
+
+$mobile: new-breakpoint(max-width 722px 12);
+$tablet: new-breakpoint(max-width 1200px 12);
+$text--color: hsl(0, 0, 95);
+$link--color: hsl(0, 0, 80);
+$link--color__hover: hsl(0, 0, 100);
+$transparent-background-color: rgba(0, 0, 0 ,0.8);
+
+$base-border-color: transparent;
+$base-font-color: $text--color;
+$base-spacing: 10;
+$accordion-menu-background: transparent;
+$accordion-menu-border: transparent;
+$padding-top: 2em;

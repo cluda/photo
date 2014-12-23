@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+  color: $text--color;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  background-size: cover;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @include transition(all 1s ease-in-out);
+}
+
+a {
+  color: $link--color;
+  text-decoration: none;
+  font-weight: 200;
+
+  &:hover {
+    color: $link--color__hover;
+    font-weight: 300;
+  }
+}
+
+nav {
+  line-height: 1.3em;
+}
+
+h1 {
+  margin-top: 0px;
+  padding-top: $padding-top;
+  @include media($mobile) {
+    padding-top: 20px;
+  }
+}
