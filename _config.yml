@@ -34,8 +34,9 @@ prose:
     - .gitignore
     - index.html
     - _config.yml
+    - README.md
   metadata:
-    app:
+    galleries:
       - name: "title"
         field:
           element: "text"
