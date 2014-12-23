@@ -1,4 +1,5 @@
 ---
+parent: no-page
 ---
 $.get("{{ site.baseurl }}/background_pictures.csv", function (data) {
   var sliderImages = data.split(',');

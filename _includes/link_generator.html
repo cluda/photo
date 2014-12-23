@@ -5,6 +5,7 @@
 
   {% if page.url == "/index.html" %}
   {% elsif page.url == "/pages/about.html" %}
+  {% elsif page.parent == "no-page" %}
   {% elsif page.parent == "0" %}
     <li>
       <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
