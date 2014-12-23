@@ -53,7 +53,7 @@ prose:
       - name: "parent"
         field:
           element: "text"
-          label: "Parent in Sidebar (optional)"
+          label: "Parent in Sidebar (should be 0 if no parent)"
           value: "0"
     pages:
       - name: "title"
@@ -67,5 +67,24 @@ prose:
       - name: "parent"
         field:
           element: "text"
-          label: "Parent in Sidebar (optional)"
+          label: "Parent in Sidebar (should be 0 if no parent)"
+          value: "0"
+    videos:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Video Title"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "black_transparent/video"
+      - name: "video-id"
+        field:
+          element: "number"
+          label: "Id of video at Vimeo. The last part of the video URL."
+          help: "Example: 114487683."
+      - name: "parent"
+        field:
+          element: "text"
+          label: "Parent in Sidebar (should be 0 if no parent)"
           value: "0"
