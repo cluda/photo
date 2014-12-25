@@ -9,32 +9,6 @@ parent: no-page
 @import "base";
 @import "sidebar";
 
-.outer-container {
-  @include outer-container;
-  height: 100%;
-}
-
-.content {
-  @include span-columns(8);
-  @include omega();
-  color: $text--color;
-  background-color: $transparent-background-color;
-  font-size: 0.8em;
-  padding-left: 1.2em;
-  padding-right: 1.2em;
-  min-height: 100%;
-  max-width: 950px;
-  padding-top: 13px;
-  -webkit-box-shadow: 0px 2px 2px 2px $transparent-background-color;
-  -moz-box-shadow: 0px 2px 2px 2px $transparent-background-color;
-  box-shadow: 0px 2px 2px 2px $transparent-background-color;
-
-  @include media($mobile) {
-    @include span-columns(12);
-    background-color: transparent;
-  }
-}
-
 .tag, .flickr_user {
   display: none;
 }
@@ -49,4 +23,35 @@ parent: no-page
 
 .fb-comments {
   width: 100%;
+}
+
+.content-background-holder {
+  width: 100%;
+  min-height: 100%;
+  max-width: 950px;
+  position: fixed;
+  background-color: $transparent-background-color;
+  z-index: -1;
+  -webkit-box-shadow: 0px 2px 2px 2px $transparent-background-color;
+  -moz-box-shadow: 0px 2px 2px 2px $transparent-background-color;
+  box-shadow: 0px 2px 2px 2px $transparent-background-color;
+}
+
+.outer-container {
+  @include outer-container;
+  height: 100%;
+}
+
+.content-box {
+  @include span-columns(8);
+}
+
+.content {
+  color: $text--color;
+  font-size: 0.8em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  min-height: 100%;
+  max-width: 950px;
+  padding-top: 13px;
 }
