@@ -6,6 +6,7 @@ parent: no-page
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
+    js.async=true;
     js.src = "//connect.facebook.net/nb_NO/sdk.js#xfbml=1&appId=268940999792986&version=v2.0";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
