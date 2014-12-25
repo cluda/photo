@@ -12,17 +12,18 @@
 <div class="flickr_user">{{ site.flickr_user }}</div>
 <div class="outer-container">
   {% include sidebar.html %}
-  <div class="content-box">
-    <div class="content-background-holder"></div>
-    <div class="content">
+  <div class="content">
     <h1>{{page.title}}</h1>
     <p>
       {{ content }}
     </p>
+    <div class="block">
+
     <div id="my-fotorama" data-keyboard="true" data-auto="false" data-nav="thumbs" data-width="100%" data-maxheight="100%" data-minheight="350px"></div>
     {% if page.fb-comments == true %}
-      <p><div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5" data-colorscheme="dark"></div></p>
+      <p><div style="float: left; padding: 2px 2px 2px 2px;" class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5" data-colorscheme="dark"></div></p>
     {% endif %}
+      <div style="clear: both;"></div>
     </div>
   </div>
   </div>

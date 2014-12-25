@@ -81,6 +81,10 @@
     height: auto;
     width: 100%;
     min-height: initial;
+    background-color: $transparent-background-color;
+    -webkit-box-shadow: 0px 2px 2px 2px $transparent-background-color;
+    -moz-box-shadow: 0px 2px 2px 2px $transparent-background-color;
+    box-shadow: 0px 2px 2px 2px $transparent-background-color;
   }
 }
 
@@ -101,6 +105,7 @@
   @include media($mobile) {
     @include span-columns(12);
     width: 100%;
+    background-color: transparent;
   }
 }
 
