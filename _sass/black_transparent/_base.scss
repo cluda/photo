@@ -29,6 +29,7 @@ nav {
 h1 {
   margin-top: 0em;
   padding-top: $padding-top;
+  line-height: 0.94em;
   @include media($mobile) {
     padding-top: 20px;
   }
