@@ -41,7 +41,7 @@ prose:
         field:
           label: "Published"
           element: "checkbox"
-          value: "true"
+          value: true
       - name: "title"
         field:
           element: "text"
@@ -64,13 +64,13 @@ prose:
         field:
           label: "Facebook Comments"
           element: "checkbox"
-          value: "false"
+          value: false
     pages:
       - name: "published"
         field:
           label: "Published"
           element: "checkbox"
-          value: "true"
+          value: true
       - name: "title"
         field:
           element: "text"
@@ -88,13 +88,13 @@ prose:
         field:
           label: "Facebook Comments"
           element: "checkbox"
-          value: "false"
+          value: false
     videos:
       - name: "published"
         field:
           label: "Published"
           element: "checkbox"
-          value: "true"
+          value: true
       - name: "title"
         field:
           element: "text"
@@ -117,4 +117,4 @@ prose:
         field:
           label: "Facebook Comments"
           element: "checkbox"
-          value: "false"
+          value: false
