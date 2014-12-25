@@ -3,7 +3,7 @@ title: Photo
 email: kontakt@cluda.no
 description: "Photo Site"
 baseurl: "/photo" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://cluda.github.io/photo/" # the base hostname & protocol for your site
 twitter_username: CludaSoftware
 github_username:  cluda
 
@@ -60,6 +60,11 @@ prose:
           element: "text"
           label: "Parent in Sidebar (should be 0 if no parent)"
           value: "0"
+      - name: "fb-comments"
+        field:
+          label: "Facebook Comments"
+          element: "checkbox"
+          value: "false"
     pages:
       - name: "published"
         field:
@@ -79,6 +84,11 @@ prose:
           element: "text"
           label: "Parent in Sidebar (should be 0 if no parent)"
           value: "0"
+      - name: "fb-comments"
+        field:
+          label: "Facebook Comments"
+          element: "checkbox"
+          value: "false"
     videos:
       - name: "published"
         field:
@@ -103,3 +113,8 @@ prose:
           element: "text"
           label: "Parent in Sidebar (should be 0 if no parent)"
           value: "0"
+      - name: "fb-comments"
+        field:
+          label: "Facebook Comments"
+          element: "checkbox"
+          value: "false"
