@@ -1,5 +1,5 @@
 # Site settings
-title: Photo
+title: "Cluda Photo"
 email: kontakt@cluda.no
 description: "Website for photographers."
 baseurl: "/photo" # the subpath of your site, e.g. /blog/
