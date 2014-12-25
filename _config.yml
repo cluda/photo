@@ -3,11 +3,12 @@ title: "Cluda Photo"
 email: kontakt@cluda.no
 description: "Website for photographers."
 baseurl: "/photo" # the subpath of your site, e.g. /blog/
-url: "http://cluda.github.io/photo/" # the base hostname & protocol for your site
+url: "http://cluda.github.io/photo" # the base hostname & protocol for your site
 twitter_username: CludaSoftware
 github_username:  cluda
-icon: "img/cluda-icon.ico"
-logo: "img/cluda_logo.png"
+icon: "/img/cluda-icon.ico"
+logo: "/img/cluda_logo.png"
+og_image: /img/screen-shot.jpg
 
 include: ['.htaccess']
 
