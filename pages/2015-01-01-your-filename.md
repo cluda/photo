@@ -1,7 +1,7 @@
 ---
 layout: black_transparent/page
 published: true
-title: ""
+title: title
 parent: "0"
 "fb-comments": false
 ---
