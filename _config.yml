@@ -37,6 +37,7 @@ prose:
     - index.html
     - _config.yml
     - README.md
+    - img
   metadata:
     galleries:
       - name: "published"
