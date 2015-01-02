@@ -6,7 +6,8 @@ parent: "0"
 "fb-comments": false
 ---
 
-![1.jpg](/gallery-images/1.jpg)![https://dl.dropboxusercontent.com/u/14712445/testimages/2012-08-28%2020.02.38.jpg]
+![1.jpg](/![2](/pages/2.jpg)gallery-images/1.jpg)![https://dl.dropboxusercontent.com/u/14712445/testimages/2012-08-28%2020.02.38.jpg]
+![2.jpg](/pages/2.jpg)
 
 ![https://dl.dropboxusercontent.com/u/14712445/testimages/2012-08-28%2020.02.27.jpg]
 
