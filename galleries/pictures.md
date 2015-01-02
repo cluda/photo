@@ -1,5 +1,5 @@
 ---
-layout: black_transparent/gallery
+layout: black_transparent/flickr-gallery
 published: true
 title: Pictures
 parent: "0"

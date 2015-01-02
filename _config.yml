@@ -25,6 +25,7 @@ prose:
   rooturl: ''
   siteurl: 'http://cluda.github.io/photo/'
   relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'gallery-images'
   ignore:
     - _includes
     - _layouts
