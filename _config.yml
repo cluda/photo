@@ -9,6 +9,9 @@ github_username:  cluda
 icon: "/img/cluda-icon.ico"
 logo: "/img/cluda_logo.png"
 og_image: /img/screen-shot.jpg
+permalink: /:title/
+relative_permalinks: true
+rooturl: "/photo"
 
 include: ['.htaccess']
 
