@@ -41,6 +41,7 @@ prose:
     - _config.yml
     - README.md
     - img
+    - CNAME
   metadata:
     flickr-galleries:
       - name: "published"
