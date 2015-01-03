@@ -138,6 +138,10 @@ prose:
         field:
           element: "text"
           label: "Video Title"
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "Video Description"
       - name: "layout"
         field:
           element: "hidden"
