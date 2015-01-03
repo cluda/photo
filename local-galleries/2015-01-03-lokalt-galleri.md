@@ -3,7 +3,7 @@ layout: "black_transparent/local-gallery"
 published: true
 title: Lokalt Galleri
 parent: "0"
-"fb-comments": false
+"fb-comments": true
 ---
 
 ![2014-04-13 15.22.53.jpg](/local-galleries/img/2014-04-13 15.22.53.jpg)
