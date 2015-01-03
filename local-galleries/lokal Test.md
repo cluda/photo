@@ -1,6 +1,6 @@
 ---
 layout: black_transparent/local-gallery
 title: Max
-parent: ""
+parent: "0"
 fb-comments: true
 ---
