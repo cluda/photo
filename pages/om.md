@@ -11,6 +11,6 @@ Cluda Foto er en nettløsning for fotografer. Fotografer kan legge til bilder, f
 
 Innhold kan legges til og endres gjennom en enkel nettside.
 
-I kontrast til andre publiseringsverktøy som Wordpress og Jomla er alt innholdet generet til en statisk nettside. Dette fører til at denne løsningen er raskere og sikkrere enn alternativene.
+I kontrast til andre publiseringsverktøy som Wordpress og Jomla blir alt innholdet generet til en statisk nettside. Dette fører til at denne løsningen er raskere og sikkrere enn alternativene.
 
-Se cluda.no for pris og bestilling.
+Se [cluda.no](http:/cluda.no)  for pris og bestilling.
