@@ -86,11 +86,6 @@ prose:
         field:
           element: "hidden"
           value: "black_transparent/local-gallery"
-      - name: "flickr_tag"
-        field:
-          element: "text"
-          label: "The tag used at Flickr on the images you want to be in the gallery."
-          help: "If you specify birds as the flickr_tag. This means that the 20 first pictures to be included in the gallery should have the tag birds1 on Flickr, and the next 20 pictures to be included should have the tag birds2 and so on."
       - name: "parent"
         field:
           element: "text"
