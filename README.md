@@ -23,6 +23,7 @@ Set Up
 layout: black_transparent/gallery
 title: Birds
 flickr_tag: bilder
+description: ""
 parent: "do"
 ---
 ```

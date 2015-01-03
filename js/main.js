@@ -53,3 +53,5 @@ $('.js-accordion-trigger').bind('click', function (e) {
   jQuery(this).toggleClass( "minus-sign" );
   jQuery(this).toggleClass( "plus-sign" );
 });
+
+$('body').attr('oncontextmenu','return false;');
