@@ -2,8 +2,8 @@
 title: "Cluda Photo"
 email: kontakt@cluda.no
 description: "Website for photographers."
-baseurl: "/photo" # the subpath of your site, e.g. /blog/
-url: "http://cluda.github.io/photo" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://foto.cluda.no" # the base hostname & protocol for your site
 twitter_username: CludaSoftware
 github_username:  cluda
 icon: "/img/cluda-icon.ico"
@@ -11,7 +11,7 @@ logo: "/img/cluda_logo.png"
 og_image: /img/screen-shot.jpg
 permalink: /:title/
 relative_permalinks: true
-rooturl: "/photo"
+rooturl: ""
 
 include: ['.htaccess']
 
@@ -25,7 +25,7 @@ sass:
     sass_dir: _sass/black_transparent/
 
 prose:
-  siteurl: 'http://cluda.github.io/photo/'
+  siteurl: 'http://foto.cluda.no'
   relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'gallery-images'
   ignore:
