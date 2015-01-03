@@ -15,4 +15,6 @@ I kontrast til andre publiseringsverktøy som Wordpress og Jomla blir alt innhol
 
 Om det ønskes kan bilder også hentes direkte fra andre nettsider som for eksempel Flickr, eller annen webserver.
 
+Cluda tilbyr også utvikling av skreddersydd design til Cluda Foto.
+
 Se [cluda.no](http://cluda.no)  for pris og bestilling.
