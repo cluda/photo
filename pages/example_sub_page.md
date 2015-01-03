@@ -1,8 +1,8 @@
 ---
 layout: black_transparent/page
 published: true
-title: Example page
-parent: "Menu Item"
+title: Eksempel Side
+parent: "Meny Element"
 ---
 
-This is a example page.
+Dette er en eksempel side.

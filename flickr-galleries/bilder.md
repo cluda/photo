@@ -1,7 +1,7 @@
 ---
 layout: black_transparent/flickr-gallery
 published: true
-title: Pictures
+title: Bilder
 parent: "0"
 flickr_tag: bilder
 description: ""

@@ -1,8 +1,8 @@
 ---
 layout: black_transparent/video
 published: true
-title: Bear
-parent: Videos
+title: Bjørn
+parent: Videoer
 "video-id": "106209455"
 description: "Bear and wolf."
 "fb-comments": true
