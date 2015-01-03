@@ -1,6 +1,6 @@
 ---
 layout: black_transparent/page
-title: Om Siden
+title: Om Cluda Foto
 parent: "0"
 published: true
 ---
