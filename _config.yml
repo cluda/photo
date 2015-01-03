@@ -27,7 +27,7 @@ sass:
 prose:
   siteurl: 'http://foto.cluda.no'
   relativeLinks: 'http://prose.github.io/starter/links.jsonp'
-  media: 'gallery-images'
+  media: 'local-galleries/img'
   ignore:
     - _includes
     - _layouts
@@ -42,7 +42,7 @@ prose:
     - README.md
     - img
   metadata:
-    galleries:
+    flickr-galleries:
       - name: "published"
         field:
           label: "Published"
@@ -55,7 +55,36 @@ prose:
       - name: "layout"
         field:
           element: "hidden"
-          value: "black_transparent/gallery"
+          value: "black_transparent/flickr-gallery"
+      - name: "flickr_tag"
+        field:
+          element: "text"
+          label: "The tag used at Flickr on the images you want to be in the gallery."
+          help: "If you specify birds as the flickr_tag. This means that the 20 first pictures to be included in the gallery should have the tag birds1 on Flickr, and the next 20 pictures to be included should have the tag birds2 and so on."
+      - name: "parent"
+        field:
+          element: "text"
+          label: "Parent in Sidebar (should be 0 if no parent)"
+          value: "0"
+      - name: "fb-comments"
+        field:
+          label: "Facebook Comments"
+          element: "checkbox"
+          value: false
+    local-galleries:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: true
+      - name: "title"
+        field:
+          element: "text"
+          label: "Gallery Title"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "black_transparent/local-gallery"
       - name: "flickr_tag"
         field:
           element: "text"
