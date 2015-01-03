@@ -1,7 +1,7 @@
 # Site settings
-title: "Cluda Photo"
+title: "Cluda Foto"
 email: kontakt@cluda.no
-description: "Website for photographers."
+description: "Nettside for fotografer."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://foto.cluda.no" # the base hostname & protocol for your site
 twitter_username: CludaSoftware
