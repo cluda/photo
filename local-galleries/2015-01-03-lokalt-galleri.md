@@ -2,6 +2,7 @@
 layout: "black_transparent/local-gallery"
 published: true
 title: Lokalt Galleri
+description: "Disse bildene ligger lagret på web-serveren."
 parent: "0"
 "fb-comments": true
 ---
