@@ -13,4 +13,6 @@ Innhold kan legges til og endres gjennom en enkel nettside.
 
 I kontrast til andre publiseringsverktøy som Wordpress og Jomla blir alt innholdet genert til en statisk nettside. Dette fører til at denne løsningen er mye raskere og sikrere enn andre alternativer.
 
+Om det ønskes kan bilder også hentes direkte fra andre nettsider som for eksempel Flickr, eller annen webserver.
+
 Se [cluda.no](http://cluda.no)  for pris og bestilling.
