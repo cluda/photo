@@ -43,9 +43,12 @@ $.get("{{ site.baseurl }}/background/list.md", function (data) {
 
     for (var i in lines) {
         console.log('thisLine:' + lines[i]);
-        var startOfAddress = lines[i].indexOf("](/") + 2;
-        var endOfAddress = lines[i].length - (startOfAddress + 1);
-        sliderImages.push(lines[i].substr(startOfAddress, endOfAddress).replace(/ /g, '%20'));
+        var theIndex = lines[i].indexOf("](/");
+        if(theIndex > 0) {
+            var startOfAddress = theIndex + 2;
+            var endOfAddress = lines[i].length - (startOfAddress + 1);
+            sliderImages.push(lines[i].substr(startOfAddress, endOfAddress).replace(/ /g, '%20'));
+        }
     }
 
     $('body').css('backgroundImage', 'url('+ sliderImages[0] + ')');
