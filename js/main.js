@@ -53,7 +53,7 @@ $.get("{{ site.baseurl }}/background/list.md", function (data) {
     var url = document.URL;
     var filename = url.substring(url.lastIndexOf('/') + 1);
 
-    if (filename === "" || filename === "index.html") {
+    if (filename === "" || filename === "index.html" && sliderImages.length > 1) {
         var i = 0;
         setInterval(function () {
             $('body').css('backgroundImage', 'url(' + sliderImages[i] + ')');
