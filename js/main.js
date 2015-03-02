@@ -25,7 +25,7 @@ parent: no-page
 }
 
 
-$.get("{{ site.baseurl }}/background/images.csv", function (data) {
+$.get("{{ site.baseurl }}/background/list.csv", function (data) {
   var sliderImages = data.split(',');
   $('body').css('backgroundImage', 'url(' + sliderImages[0] + ')');
 
