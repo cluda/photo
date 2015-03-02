@@ -47,6 +47,7 @@ $.get("{{ site.baseurl }}/background/list.csv", function (data) {
         var startOfAddress = line.indexOf("](/") + 2;
         var endOfAddress = line.length - 1;
         sliderImages.push(line.substr(startOfAddress, endOfAddress));
+        console.log(line.substr(startOfAddress, endOfAddress));
     }
 
     $('body').css('backgroundImage', 'url(' + sliderImages[0] + ')');
