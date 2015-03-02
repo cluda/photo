@@ -41,18 +41,17 @@ $.get("{{ site.baseurl }}/background/list.md", function (data) {
     var sliderImages = [];
     var lines = data.split("\n");
 
-    for (line in lines) {
-        var startOfAddress = line.indexOf("](/") + 2;
-        var endOfAddress = line.length - 1;
-        sliderImages.push(line.substr(startOfAddress, endOfAddress));
-        console.log(line.substr(startOfAddress, endOfAddress));
+    for (var i in lines) {
+        console.log('thisLine:' + lines[i]);
+        var startOfAddress = lines[i].indexOf("](/") + 2;
+        var endOfAddress = lines[i].length - (startOfAddress + 1);
+        sliderImages.push(lines[i].substr(startOfAddress, endOfAddress).replace(/ /g, '%20'));
     }
 
-    $('body').css('backgroundImage', 'url(' + sliderImages[0] + ')');
+    $('body').css('backgroundImage', 'url('+ sliderImages[0] + ')');
 
     var url = document.URL;
     var filename = url.substring(url.lastIndexOf('/') + 1);
-    console.log(filename);
 
     if (filename === "" || filename === "index.html") {
         var i = 0;
