@@ -1,39 +1,61 @@
 ---
-parent: no-page
+    parent
+:
+no - page
 ---
 
-    window.onload = function(){
+    window.onload = function () {
     // All code comes here
 
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
         FB.init({
-            appId      : '1517316898553926',
-            xfbml      : true,
-            version    : 'v2.2'
+            appId: '1517316898553926',
+            xfbml: true,
+            version: 'v2.2'
         });
     };
 
-    (function(d, s, id){
+    (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    !function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.async = true;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');
 }
 
 
 $.get("{{ site.baseurl }}/background/list.csv", function (data) {
-  var sliderImages = data.split(',');
-  $('body').css('backgroundImage', 'url(' + sliderImages[0] + ')');
+    var sliderImages = [];
+    var lines = data.split("\n");
 
-  var url = document.URL;
-  var filename = url.substring(url.lastIndexOf('/')+1);
-  console.log( filename );
+    for (line in lines) {
+        var startOfAddress = line.indexOf("](/") + 2;
+        var endOfAddress = line.length - 1;
+        sliderImages.push(line.substr(startOfAddress, endOfAddress));
+    }
 
-    if ( filename === "" || filename === "index.html" ) {
+    $('body').css('backgroundImage', 'url(' + sliderImages[0] + ')');
+
+    var url = document.URL;
+    var filename = url.substring(url.lastIndexOf('/') + 1);
+    console.log(filename);
+
+    if (filename === "" || filename === "index.html") {
         var i = 0;
         setInterval(function () {
             $('body').css('backgroundImage', 'url(' + sliderImages[i] + ')');
@@ -47,11 +69,11 @@ $.get("{{ site.baseurl }}/background/list.csv", function (data) {
 });
 
 $('.js-accordion-trigger').bind('click', function (e) {
-  jQuery(this).parent().find('.submenu').slideToggle('fast');  // apply the toggle to the ul
-  jQuery(this).parent().toggleClass('is-expanded');
-  e.preventDefault();
-  jQuery(this).toggleClass( "minus-sign" );
-  jQuery(this).toggleClass( "plus-sign" );
+    jQuery(this).parent().find('.submenu').slideToggle('fast');  // apply the toggle to the ul
+    jQuery(this).parent().toggleClass('is-expanded');
+    e.preventDefault();
+    jQuery(this).toggleClass("minus-sign");
+    jQuery(this).toggleClass("plus-sign");
 });
 
-$('body').attr('oncontextmenu','return false;');
+$('body').attr('oncontextmenu', 'return false;');
