@@ -1,5 +1,5 @@
 ---
-    parent: no - page
+    parent: no-page
 ---
 
     window.onload = function () {
