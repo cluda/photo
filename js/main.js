@@ -39,7 +39,7 @@ no - page
 }
 
 
-$.get("{{ site.baseurl }}/background/list.csv", function (data) {
+$.get("{{ site.baseurl }}/background/list.md", function (data) {
     var sliderImages = [];
     var lines = data.split("\n");
 
