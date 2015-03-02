@@ -42,7 +42,6 @@ $.get("{{ site.baseurl }}/background/list.md", function (data) {
     var lines = data.split("\n");
 
     for (var i in lines) {
-        console.log('thisLine:' + lines[i]);
         var theIndex = lines[i].indexOf("](/");
         if(theIndex > 0) {
             var startOfAddress = theIndex + 2;
