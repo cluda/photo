@@ -77,3 +77,5 @@ $('.js-accordion-trigger').bind('click', function (e) {
 });
 
 $('body').attr('oncontextmenu', 'return false;');
+
+// fetch test
