@@ -2,6 +2,8 @@
     parent: no-page
 ---
 
+    //THIS FILE SHOULD ONLY BE EDITED IN THE ORIGIN
+
     window.onload = function () {
     // All code comes here
 

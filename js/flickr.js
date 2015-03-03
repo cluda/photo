@@ -1,3 +1,5 @@
+//THIS FILE SHOULD ONLY BE EDITED IN THE ORIGIN
+
 $(document).ready(function () {
   var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
   var callNumber = 1;
