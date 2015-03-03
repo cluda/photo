@@ -37,7 +37,7 @@
 }
 
 
-$.get("{{ site.url }}/backgrounds.md", function (data) {
+$.get("{{ site.baseurl }}/backgrounds.md", function (data) {
     var sliderImages = [];
     var lines = data.split("\n");
 
