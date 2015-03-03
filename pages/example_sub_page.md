@@ -6,3 +6,5 @@ parent: "Meny Element"
 ---
 
 Dette er en eksempel side.
+
+Eksempel text her.
